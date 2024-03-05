@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/eb05e67456.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- remix link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="bg-sky-300 w-9/12 mx-auto border-0 rounded-xl p-10 space-y-4">
+      <h1 class="text-center text-3xl font-bold">My Text Editor</h1>
+      <div class="bg-slate-400 border-1 p-5 rounded-xl">
+        <!-- nav start -->
+        <nav class="flex justify-around items-center">
+          <div class="p-5">
+            <ul class="flex gap-5">
+              <li>
+                <i id="bold" class="fa-solid fa-bold"></i>
+              </li>
+              <li><i id="italic" class="fa-solid fa-italic"></i></li>
+              <li><i id="underline" class="fa-solid fa-underline"></i></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex gap-5">
+              <li><i id="align-left" class="fa-solid fa-align-left"></i></li>
+              <li>
+                <i id="align-center" class="fa-solid fa-align-center"></i>
+              </li>
+              <li><i id="align-right" class="fa-solid fa-align-right"></i></li>
+              <li>
+                <i id="align-justify" class="fa-solid fa-align-justify"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex gap-5">
+              <li><i id="up-low" class="ri-font-size"></i></li>
+              <li>
+                <input
+                  type="color"
+                  id="favColor"
+                  name="favcolor"
+                  value="#ff0000"
+                />
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- nav end -->
+        <hr class="border-black w-9/12 mx-auto" />
+
+        <div class="bg-white w-9/12 mx-auto h-96 mt-5 border-1 rounded-xl p-5">
+          <p id="paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, cum! Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Ducimus, in nulla nisi quo deleniti nostrum. Voluptates alias
+            odio delectus consequatur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/editor.js"></script>
+  </body>
+</html>
